@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Marta Glubowska</title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Droid+Sans|Francois+One|Fredericka+the+Great|Josefin+Sans|Julius+Sans+One|Kranky|Open+Sans+Condensed:300|Oswald|Oxygen|Passion+One|Poiret+One|Rajdhani" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="contain-to-grid sticky" data-sticky-container>
+      <nav class="hover-underline-menu" data-topbar role="navigation"  data-menu-underline-from-center>
+        <ul class="menu align-center">
+          <li><a href="/#aboutme">About me</a></li>
+          <li><a href="/#myprojects">Projects</a></li>
+          <li><a href="/#contactme">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+<%= yield %>
+
+    <div class="grid-container fluid prefooter">
+      <div class="small-4 small-centered columns">
+        <h4 class="marketing-site-prefooter-name"><i class="fa fa-quote-right fa-1x" aria-hidden="true" style="color:#white"></i></h4>
+      </div>
+      <div class="small-4 small-centered columns">
+        <q>Follow your dreams, believe in yourself and don't give up</q>
+        <p style="text-align: right;">Rachel Corrie</p>
+      </div>
+    </div>
+
+    <footer class="marketing-site-footer">
+      <h1 class="footer_title", id="contactme">Contact me</h1>
+      <div class="row">
+        <div class="small-4 columns">
+           <h4 class="marketing-site-footer-name">Phone me</h4>
+           <div class="small-8 small-centered columns">
+             <div class="marketing-site-footer-block">
+               <i class="fa fa-phone fa-lg" aria-hidden="true" style="color:#020304"></i>
+               <a href="mailto:mglubowska@gmail.com" style="color: #8aa0ae"><p>+48 608 391 886</p></a>
+             </div>
+           </div>
+        </div>
+        <div class="small-4 columns">
+           <h4 class="marketing-site-footer-name">Mail me</h4>
+           <div class="small-8 small-centered columns">
+             <div class="marketing-site-footer-block">
+               <i class="fa fa-envelope-o fa-lg" aria-hidden="true" style="color:#020304"></i>
+               <a href="mailto:mglubowska@gmail.com" style="color: #8aa0ae"><p>mglubowska@gmail.com</p></a>
+             </div>
+           </div>
+        </div>
+        <div class="small-4 columns">
+          <h4 class="marketing-site-footer-name">Follow me</h4>
+          <div class="small-8 small-centered columns">
+            <div class="marketing-site-footer-block">
+              <i class="fa fa-github fa-lg" aria-hidden="true" style="color:#020304"></i>
+              <a href="http://www.github.com/Marta2909" style="color: #8aa0ae">Marta2909</a>
+              <p></p>
+              <i class="fa fa-linkedin-square fa-lg" aria-hidden="true" style="color:#020304"></i>
+              <a href="https://www.linkedin.com/in/marta-glubowska-658736107/" style="color: #8aa0ae"><p>Marta Glubowska</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="marketing-site-footer-bottom">
+        <div class="row medium-unstack">
+          <div class="small-up-8 columns" id="footer_rightside">
+            <ul class="menu marketing-site-footer-bottom-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/#aboutme">About</a></li>
+              <li><a href="/#myprojects">Projects</a></li>
+              <li><a href="/#contactme">Contact</a></li>
+            </ul>
+          </div>
+          <div class="small-up-4 columns" id="footer_leftside">
+            <p>&copy; Marta 2017</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

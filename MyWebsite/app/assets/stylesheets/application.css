@@ -1,0 +1,186 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ *= require foundation_and_overrides
+
+ */
+
+/* -------------- nawigacja górna ------------------- */
+ .hover-underline-menu {
+   width: 100%;
+   text-align: center;
+ }
+
+ .hover-underline-menu li {
+   display: inline;
+ }
+
+ .hover-underline-menu .menu {
+   background-color: #2C3840;
+ }
+
+ .hover-underline-menu .menu a {
+   color: #fefefe;
+   padding: 1.2rem 1.5rem;
+   display: inline-block;
+ }
+
+ .hover-underline-menu .menu .underline-from-center {
+   position: relative;
+ }
+
+ .hover-underline-menu .menu .underline-from-center::after {
+   content: "";
+   position: absolute;
+   top: calc(100% - 0.125rem);
+   border-bottom: 0.125rem solid #fefefe;
+   left: 50%;
+   right: 50%;
+   transition: all 0.5s ease;
+ }
+
+ .hover-underline-menu .menu .underline-from-center:hover::after {
+   left: 0;
+   right: 0;
+   transition: all 0.5s ease;
+ }
+
+
+/* ---------------- obrazek główny ---------------------------- */
+ .hero-section {
+   background: url("13316963_1100355740005615_2875660057344204771_o.jpg") 50% no-repeat;
+   background-size: cover;
+   height: 70vh;
+   text-align: center;
+   display: -webkit-flex;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-align-items: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-justify-content: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+ }
+
+ .hero-section .hero-section-text {
+   color: #fefefe;
+   text-shadow: 4px 4px 4px #0a0a0a;
+ }
+
+ .hero-section .hero-section-text h1, h4 {
+    font-family: 'Josefin Sans', sans-serif;
+ }
+
+
+/*--------------- stopka ---------------------------------*/
+
+.marketing-site-footer {
+  background: #2c3840;
+  color: #8aa0ae;
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.marketing-site-footer .marketing-site-footer-menu-social a {
+  color: #fefefe;
+}
+
+.marketing-site-footer .column-block {
+  margin-bottom: 30px;
+}
+
+.marketing-site-footer > .row {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .marketing-site-footer .columns {
+    margin-bottom: 2rem;
+  }
+}
+
+.marketing-site-footer-name {
+  color: #fefefe;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.marketing-site-footer-title {
+  color: #fefefe;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.marketing-site-footer-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.marketing-site-footer-block .fa {
+  font-size: 2rem;
+  color: #020304;
+}
+
+.marketing-site-footer-block p {
+  margin-left: 1rem;
+  line-height: 1.125rem;
+}
+
+.marketing-site-footer-bottom {
+  background: #020304;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.marketing-site-footer-bottom p,
+.marketing-site-footer-bottom .menu {
+  margin-bottom: 0;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+  text-align: right;
+  display: inline;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links li {
+  text-align: right;
+  display: inline-block;
+}
+
+.marketing-site-footer-bottom .marketing-site-footer-bottom-links a {
+  text-align: right;
+  display: inline-block;
+  color: #8aa0ae;
+}
+
+@media screen and (max-width: 63.9375em) {
+  .marketing-site-footer-bottom .marketing-site-footer-bottom-links {
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 63.9375em) {
+  .marketing-site-footer-bottom {
+    text-align: center;
+  }
+}

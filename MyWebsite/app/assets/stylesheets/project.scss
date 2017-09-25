@@ -1,0 +1,62 @@
+// Place all the styles related to the project controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+
+.product-card {
+  background-color: #fefefe;
+  border: 1px solid #e6e6e6;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.product-card-thumbnail {
+  display: block;
+  position: relative;
+}
+
+.product-card-title {
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.product-card-desc {
+  color: #8a8a8a;
+  display: block;
+  font-family: 'Open sans', sans-serif;
+  font-size: 0.85rem;
+}
+
+.product-card-price {
+  color: #3e3e3e;
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.product-card-sale {
+  color: #cacaca;
+  display: inline-block;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  text-decoration: line-through;
+}
+
+.product-card-colors {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+.product-card-color-option {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}

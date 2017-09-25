@@ -1,0 +1,87 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.section_title {
+  padding: 3vh;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #2C3840;
+  color: #2C3840;
+}
+
+.footer_title {
+  padding: 3vh;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #fff;
+  color: #fff;
+}
+
+ h1 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+li {
+  font-family:  'Oxygen', sans-serif;
+  padding: 1vh;
+}
+
+
+/* ----------------- search ---------------- */
+
+.input-group-rounded .input-group-field {
+  border-radius: 5000px 0 0 5000px;
+  padding-left: 1rem;
+}
+
+.input-group-rounded .input-group-button .button {
+  border-radius: 0 5000px 5000px 0;
+  font-size: 0.8rem;
+  background: #2c3840;
+}
+
+/* ------------------ projects list ---------- */
+
+
+
+.marketing-site-three-up {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.marketing-site-three-up .row {
+  max-width: 80%;
+}
+
+.marketing-site-three-up .columns {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-three-up .columns {
+    margin-bottom: 0;
+  }
+}
+
+.marketing-site-three-up .fa {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1779ba;
+}
+
+.marketing-site-three-up-headline {
+  margin-bottom: 2rem;
+  font-size: 24px;
+}
+
+.prefooter {
+  background: #d8caad;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
